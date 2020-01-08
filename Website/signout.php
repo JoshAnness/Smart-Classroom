@@ -3,7 +3,7 @@
 session_start();
 include 'dbinfo.php';
 
-$id = "000000";   //Change this when added to the form
+$id = $_POST['id'];
 $name = $_POST['name'];
 $teacher = $_POST['teacher'];
 $place = $_POST['place'];
