@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Titillium Web';
+}
+main{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+  border-radius: 1em;
+}
+form
+{
+    padding-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+}
+div#formDiv{
+  padding-top: 1em;
+  background-color: orange;
+  width: 50%;
+  border-radius: 1em;
+}
+footer{
+  padding: 2em;
+  background-color: white;
+}
+h1
+{
+  background-color: orange;
+  border-radius: 1em;
+}
+.wrapper
+{
+  font-family: 'Titillium Web';
+  background-color: black;
+  text-align: center;
+  text-size: 14px;
+}
+html
+{
+  background-color: black;
+}
