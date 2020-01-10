@@ -36,12 +36,13 @@ h1
 }
 .wrapper
 {
-  font-family: 'Titillium Web';
+  /*font-family: 'Titillium Web';
   background-color: black;
   text-align: center;
-  text-size: 40px;
+  text-size: 40px;*/
+  background-image: url("logo.png");
 }
 html
 {
-  background-color: black;
+  background-color: #282828;
 }
