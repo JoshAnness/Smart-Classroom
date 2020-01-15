@@ -32,6 +32,9 @@ footer{
   font-size: 14px;
   font-weight: bold;
 }
+p {
+  margin-bottom: none;
+}
 h1
 {
   background-color: orange;
