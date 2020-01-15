@@ -3,6 +3,9 @@ body {
   font-size: 35px;
   font-family: 'Titillium Web';
   background-color: #282828;
+  margin-top: 10%;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 main{
   margin-left: auto;
