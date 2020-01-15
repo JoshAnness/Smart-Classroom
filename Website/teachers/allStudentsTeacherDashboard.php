@@ -43,15 +43,12 @@ $lastName = $_SESSION['lastName'];
 
     while($row = mysqli_fetch_array($result))
     {
-      if(strcmp($row['teacher'], $lastName) == 0)
-      {
-        echo "<tr>";
-        echo "<td>".$row['id']."</td>";
-        echo "<td>".$row['name']."</td>";
-        echo "<td>".$row['teacher']."</td>";
-        echo "<td>".$row['place']."</td>";
-        echo "</tr>";
-      }
+      echo "<tr>";
+      echo "<td>".$row['id']."</td>";
+      echo "<td>".$row['name']."</td>";
+      echo "<td>".$row['teacher']."</td>";
+      echo "<td>".$row['place']."</td>";
+      echo "</tr>";
     }
 
     echo "</table>";

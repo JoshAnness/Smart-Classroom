@@ -6,13 +6,32 @@
   <title>Teacher Login</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <body>
-    <div>
-      <form action="teacherLoginProcess.php" method="post">
-        Username:<input type="text" name="username">
-        Password:<input type="password" name="password">
+    <br><br><br><br>
+    <div class="container">
 
-        <input type="submit" value"Submit">
+      <div>
+        <h1>Teacher Login</h1>
+      </div>
 
+      <form class="form-horizontal">
+        <div class="form-group" action="teacherLoginProcess.php" method="post">
+          <label for="inputEmail3" class="col-sm-2 control-label"><h3>Username</h3></label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control input-lg" id="username" placeholder="Username" name="username">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-2 control-label"><h3>Password</h3></label>
+          <div class="col-sm-12">
+            <input type="password" class="form-control input-lg" id="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
       </form>
     </div>
 
