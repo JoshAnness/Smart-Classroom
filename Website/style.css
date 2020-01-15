@@ -54,7 +54,9 @@ html
   padding: 1em;
 }
 
-#head
+h1#head
 {
-  height: 5%;
+  height: 100px;
+  margin: auto;
+  text-align: center;
 }
