@@ -26,8 +26,11 @@ div#formDiv{
   border-radius: 1em;
 }
 footer{
-  padding: 2em;
+  padding: 1em;
   background-color: white;
+  margin-bottom: none;
+  font-size: 14px;
+  font-weight: bold;
 }
 h1
 {
@@ -45,4 +48,8 @@ h1
 html
 {
   background-color: #282828;
+}
+.space
+{
+  padding: 1em;
 }

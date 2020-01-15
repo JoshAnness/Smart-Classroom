@@ -14,7 +14,7 @@
     </h1>
     <div class = "wrapper">
     <main>
-      <div>
+      <div id = "space">
         <form method="post" action="signout.php">
           <label for="id">* ID:</label>
           <input type = "text" id = "id" name="id" required><br>
@@ -33,6 +33,8 @@
             <option value = "Drink of water"></option>
             <option value = "Signing back in"></option>
           </datalist><br>
+          <label for="other">Other reason for signing out?</label>
+          <input type = "text" id = "other" name = "other"><br> 
           <input type="submit">
           </form>
         </div>
