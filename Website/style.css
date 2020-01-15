@@ -32,9 +32,9 @@ div#formDiv{
 }
 footer{
   padding: 1em;
+  padding-bottom: 0.01em;
   background-color: white;
-  margin-bottom: none;
-  font-size: 14px;
+  font-size: .40em;
   font-weight: bold;
 }
 p {
