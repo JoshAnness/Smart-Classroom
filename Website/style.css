@@ -32,10 +32,15 @@ footer{
   font-size: 14px;
   font-weight: bold;
 }
+p {
+  margin-bottom: none;
+}
 h1
 {
   background-color: orange;
   border-radius: 1em;
+  font-size: 60px;
+  font-weight: bold;
 }
 .wrapper
 {
