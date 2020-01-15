@@ -18,6 +18,7 @@ form
     padding-left: 2em;
     margin: 20px;
     padding-bottom: 20px;
+    font-weight: bold;
 }
 div#formDiv{
   padding-top: 1em;
@@ -39,7 +40,7 @@ h1
 {
   background-color: orange;
   border-radius: 1em;
-  font-size: 60px;
+  font-size: 2em;
   font-weight: bold;
 }
 .wrapper
