@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include 'dbinfo.php';
+include '../dbinfo.php';
 
 $id = $_POST['id'];
 $name = $_POST['name'];
@@ -22,7 +22,7 @@ else
 }
 mysqli_query($con, $s);
 
-header("location: index.html");
+header("location: teacherSpecificSignoutForm.php");
 exit();
 
 ?>

@@ -1,8 +1,8 @@
 <?php
 
-$dbip = "localhost";
+$dbip = "10.140.11.102";
 $dbname = "smartclassroom";
-$dbusername = "tiger";
-$dbpassword = "!loveland81";
+$dbusername = "root";
+$dbpassword = "";
 
 ?>
