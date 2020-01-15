@@ -19,6 +19,7 @@ form
     margin: 20px;
     padding-bottom: 20px;
     font-weight: bold;
+
 }
 div#formDiv{
   padding-top: 1em;
@@ -65,4 +66,19 @@ h1#head
   height: 100px;
   margin: auto;
   text-align: center;
+}
+
+/* form formatting */
+
+label{
+    display: inline-block;
+    float: center;
+    clear: left;
+    width: 250px;
+    text-align: center;
+}
+
+input {
+  display: inline-block;
+  float: center;
 }
