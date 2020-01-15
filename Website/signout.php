@@ -12,7 +12,14 @@ $place = $_POST['place'];
 $con = mysqli_connect($dbip, $dbusername, $dbpassword);
 mysqli_select_db($con, $dbname);
 
-$s = "INSERT INTO currentlysignedout (id, name, teacher, place) VALUES('$id', '$name', '$teacher', '$place')";
+if(strcmp($place, "Signing back in") == 0)
+{
+  $s = "DELETE FROM currentlysignedout WHERE id='$id'";
+}
+else
+{
+  $s = "INSERT INTO currentlysignedout (id, name, teacher, place) VALUES('$id', '$name', '$teacher', '$place')";
+}
 mysqli_query($con, $s);
 
 header("location: index.html");

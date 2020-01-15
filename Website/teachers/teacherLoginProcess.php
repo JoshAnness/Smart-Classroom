@@ -1,6 +1,6 @@
 <?php
 
-include 'dbinfo.php';
+include '../dbinfo.php';
 session_start();
 
 $username = $_POST['username'];
