@@ -2,7 +2,7 @@
 
 $dbip = "localhost";
 $dbname = "smartclassroom";
-$dbusername = "tiger";
-$dbpassword = "!loveland81";
+$dbusername = "root";
+$dbpassword = "";
 
 ?>
