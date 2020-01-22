@@ -29,16 +29,52 @@ footer{
   padding: 2em;
   background-color: white;
 }
-label
-{
-  background-color: orange;
-}
 h1
 {
   background-color: orange;
   border-radius: 1em;
 }
+h3
+{
+    background-color: orange;
+    border-radius: .3em;
+    padding-left: .15em;
+    padding-right: .15em;
+}
+hr
+{
+    border-top: 1px solid #c0c0c0;
+}
+table
+{
+    background-color: orange;
+    border-radius: 1em;
+}
+tr:nth-child(even)
+{
+    background-color: rgb(255, 188, 62);
+}
+.wrapper
+{
+  /*font-family: 'Titillium Web';
+  background-color: black;
+  text-align: center;
+  text-size: 40px;
+  background-image: url("logo.png");*/
+}
 html
 {
   background-color: #282828;
+}
+.buffer-top
+{
+    margin-top: 20px;
+}
+.buffer-bottom
+{
+    margin-bottom: 20px;
+}
+.btn-logout
+{
+    background-color: orangered;
 }

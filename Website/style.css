@@ -1,4 +1,4 @@
-body 
+body
 {
   text-align: center;
   font-size: 35px;
@@ -15,6 +15,22 @@ main
   background-color: orange;
   border-radius: 1em;
   margin-bottom: 1em;
+}
+th
+{
+  color: black;
+}
+tr:nth-child(even)
+{
+  background-color:orange;
+}
+tr:nth-child(odd)
+{
+  background-color: #ff8300;
+}
+table
+{
+  margin-top: 1em;
 }
 form
 {
@@ -75,6 +91,18 @@ h1#head
   text-align: center;
   display: block;
   padding-top: .25em;
+}
+
+h2
+{
+    display: inline-block;
+    float: center;
+    clear: left;
+    width: 250px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 1em;
+    font-weight: bold;
 }
 
 /* form formatting */
