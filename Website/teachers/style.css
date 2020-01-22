@@ -29,18 +29,14 @@ footer{
   padding: 2em;
   background-color: white;
 }
+label
+{
+  background-color: orange;
+}
 h1
 {
   background-color: orange;
   border-radius: 1em;
-}
-.wrapper
-{
-  /*font-family: 'Titillium Web';
-  background-color: black;
-  text-align: center;
-  text-size: 40px;
-  background-image: url("logo.png");*/
 }
 html
 {
