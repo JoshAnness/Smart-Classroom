@@ -1,4 +1,5 @@
-body {
+body 
+{
   text-align: center;
   font-size: 35px;
   font-family: 'Titillium Web';
@@ -7,7 +8,8 @@ body {
   margin-left: 4em;
   margin-right: 4em;
 }
-main{
+main
+{
   margin-left: auto;
   margin-right: auto;
   background-color: orange;
@@ -25,21 +27,23 @@ form
     font-weight: bold;
 
 }
-div#formDiv{
+div#formDiv
+{
   padding-top: 1em;
   background-color: orange;
   width: 50%;
   border-radius: 1em;
 }
-footer{
+footer
+{
   margin-top: 2em;
   padding: 1em;
   padding-bottom: 0.01em;
   background-color: white;
   font-size: .40em;
   font-weight: bold;
+  border-radius: 1em;
 }
-
 h1
 {
   background-color: orange;
@@ -75,15 +79,24 @@ h1#head
 
 /* form formatting */
 
-label{
+label
+{
     display: inline-block;
     float: center;
     clear: left;
     width: 250px;
     text-align: center;
+    background-color: orange;
+    border-radius: 1em;
 }
-
-input {
+input
+{
   display: inline-block;
   float: center;
+}
+button
+{
+  background-color: gray;
+  border-radius: .5em;
+  font-size: .75em;
 }
