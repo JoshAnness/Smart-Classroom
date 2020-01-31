@@ -23,7 +23,7 @@ $lastName = $_SESSION['lastName'];
         <br>
         <div class="container">
             <div class="row">
-                <h1 class ="col-12 col-sm-6 text-center">Smith</h1>
+                <?php echo"<h1 class ='col-12 col-sm-6 text-center'>{$lastName}</h1>"; ?>
                 <a href="teacherSpecificSignoutForm.php" class="col-6 col-sm-3 text-center buffer-top"><button class="btn btn-info">My Signout Form</button></a>
                 <a href="logout.php" class="col-6 col-sm-3 text-center buffer-top"><button class="btn btn-logout">Logout</button></a>
 

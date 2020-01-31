@@ -2,6 +2,7 @@
 
 session_start();
 include 'dbinfo.php';
+date_default_timezone_set('America/New_York');
 
 $id = $_POST['id'];
 $name = $_POST['name'];
@@ -20,6 +21,11 @@ else
 {
   $s = "INSERT INTO currentlysignedout (id, name, teacher, place) VALUES('$id', '$name', '$teacher', '$place')";
 }
+mysqli_query($con, $s);
+
+$time = date("h:i:sa");
+$date = date("m-d-Y");
+$s = "INSERT INTO signoutlog (id, name, teacher, place, time, date) VALUES('$id', '$name', '$teacher', '$place', '$time', '$date')";
 mysqli_query($con, $s);
 
 header("location: index.html");
