@@ -20,6 +20,7 @@ if($num == 1)
 
   $_SESSION['username'] = $username;
   $_SESSION['lastName'] = $row[2];
+  $_SESSION['admin'] = $row[3];
 
   header("location:teacherDashboard.php");
   exit();

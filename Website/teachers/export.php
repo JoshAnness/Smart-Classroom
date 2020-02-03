@@ -4,7 +4,7 @@ $connect = mysqli_connect("localhost", "root", "", "smartclassroom");
 $output = '';
 if(isset($_POST["export"]))
 {
- $query = "SELECT * FROM currentlysignedout";
+ $query = "SELECT * FROM signoutlog";
  $result = mysqli_query($connect, $query);
  if(mysqli_num_rows($result) > 0)
  {
@@ -15,6 +15,8 @@ if(isset($_POST["export"]))
                          <th>Name</th>  
                          <th>Teacher</th>  
        <th>Place</th>
+	   <th>Time</th>
+	   <th>Date</th>
                     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -25,6 +27,8 @@ if(isset($_POST["export"]))
                          <td>'.$row["name"].'</td>  
                          <td>'.$row["teacher"].'</td>  
        <td>'.$row["place"].'</td>  
+	   <td>'.$row["time"].'</td>
+	   <td>'.$row["date"].'</td>
                     </tr>
    ';
   }

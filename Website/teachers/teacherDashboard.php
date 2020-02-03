@@ -67,7 +67,6 @@ $lastName = $_SESSION['lastName'];
               }
 
               echo "</table>";
-
               ?>
             </div>
 			
