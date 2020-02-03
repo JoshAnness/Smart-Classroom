@@ -13,6 +13,12 @@ $place = $_POST['place'];
 $con = mysqli_connect($dbip, $dbusername, $dbpassword);
 mysqli_select_db($con, $dbname);
 
+if(strcmp($teacher, "") == 0)
+{
+	header("location:index.html");
+	exit();
+}
+
 if(strcmp($place, "Signing back in") == 0)
 {
   $s = "DELETE FROM currentlysignedout WHERE id='$id'";
