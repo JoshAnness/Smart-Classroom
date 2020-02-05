@@ -15,8 +15,10 @@ if(isset($_POST["export"]))
                          <th>Name</th>  
                          <th>Teacher</th>  
        <th>Place</th>
-	   <th>Time</th>
-	   <th>Date</th>
+	   <th>Time Out</th>
+	   <th>Date Out</th>
+	   <th>Time In</th>
+	   <th>Date In</th>
                     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -27,8 +29,10 @@ if(isset($_POST["export"]))
                          <td>'.$row["name"].'</td>  
                          <td>'.$row["teacher"].'</td>  
        <td>'.$row["place"].'</td>  
-	   <td>'.$row["time"].'</td>
-	   <td>'.$row["date"].'</td>
+	   <td>'.$row["timeout"].'</td>
+	   <td>'.$row["dateout"].'</td>
+	   <td>'.$row["timein"].'</td>
+	   <td>'.$row["datein"].'</td>
                     </tr>
    ';
   }
