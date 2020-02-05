@@ -1,4 +1,3 @@
-# Smart-Classroom
 # TechOlympics 2020 Showcase Project - Loveland High School
 TechOlympics is the nation's largest high school student-run tech conference: [techolympics.org](http://techolympics.org)
 ## Smart-Clock
