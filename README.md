@@ -1,2 +1,2 @@
 # Smart-Classroom
-INTERAlliance Showcase Project
+# INTERAlliance Showcase Project
