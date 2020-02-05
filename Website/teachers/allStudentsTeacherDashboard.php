@@ -67,6 +67,10 @@ $lastName = $_SESSION['lastName'];
 
               ?>
             </div>
+			
+			<form method="post" action="export.php">
+			 <input type="submit" name="export" class="btn btn-success" value="Export" />
+			</form>
         </div>
   </body>
 </html>
