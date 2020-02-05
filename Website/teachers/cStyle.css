@@ -53,6 +53,11 @@ table
 tr:nth-child(even)
 {
     background-color: rgb(255, 188, 62);
+    border-radius: 1em;
+}
+tbody tr:last-child td:last-child
+{
+    border-radius: 0 0 1em 0;
 }
 .wrapper
 {

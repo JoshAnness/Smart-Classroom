@@ -47,7 +47,7 @@ $lastName = $_SESSION['lastName'];
 
               echo "<table class='table table-borderless'>";
               echo "<tr>";
-              echo "<th>ID</th>";
+              echo "<th>Photo</th>";
               echo "<th>Student Name</th>";
               echo "<th>Teacher Name</th>";
               echo "<th>Location</th>";
@@ -57,8 +57,8 @@ $lastName = $_SESSION['lastName'];
               {
                 if(strcmp($row['teacher'], $lastName) == 0)
                 {
-                echo "<tr>";
-                echo "<td>".$row['id']."</td>";
+                echo "<tr style='display:flex; align-items:center; justify-content:space-between;' class='col-12'>";
+                echo "<td><img src='../studentPics/".$row['id'].".jpg' alt='".$row['id']."' height='75px'></td>";
                 echo "<td>".$row['name']."</td>";
                 echo "<td>".$row['teacher']."</td>";
                 echo "<td>".$row['place']."</td>";
@@ -69,7 +69,7 @@ $lastName = $_SESSION['lastName'];
               echo "</table>";
               ?>
             </div>
-			
+
 			<form method="post" action="export.php">
 			 <input type="submit" name="export" class="btn btn-success" value="Export" />
 			</form>
