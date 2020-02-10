@@ -33,20 +33,17 @@ $lastName = $_SESSION['lastName'];
         <form method="post" action="teacherSpecificSignout.php">
           <label for="id">* Student ID:</label>
           <input type = "text" id = "id" name="id" required><br>
-          <label for="Name">* Name:</label>
-          <input type = "text" id = "Name" name="name" required><br>
           <?php echo"<input type='hidden' name='teacher' value='{$lastName}'"; ?>
           <label for="reason">* Why are you signing out?</label>
-          <input list="selection" id = "place" name="place" required><br>
-          <datalist id = "selection">
-            <option value = "Restroom"></option>
-            <option value = "Counselor"></option>
-            <option value = "Nurse"></option>
-            <option value = "Media Center"></option>
-            <option value = "Leaving early"></option>
-            <option value = "Drink of water"></option>
-            <option value = "Signing back in"></option>
-          </datalist><br>
+          <select id="place" name="place" required>
+            <option value = "Restroom">Restroom</option>
+            <option value = "Counselor">Counselor</option>
+            <option value = "Nurse">Nurse</option>
+            <option value = "Media Center">Media Center</option>
+            <option value = "Leaving early">Leaving early</option>
+            <option value = "Drink of water">Drink of water</option>
+            <option value = "Signing back in">Signing back in</option>
+          </select><br>
           <input type="submit">
           </form>
         </div>

@@ -51,17 +51,19 @@ $lastName = $_SESSION['lastName'];
               echo "<th>Student Name</th>";
               echo "<th>Teacher Name</th>";
               echo "<th>Location</th>";
+			  echo "<th>Time Out</th>";
               echo "</tr>";
 
               while($row = mysqli_fetch_array($result))
               {
                 if(strcmp($row['teacher'], $lastName) == 0)
                 {
-                echo "<tr style='display:flex; align-items:center; justify-content:space-between;' class='col-12'>";
-                echo "<td><img src='../studentPics/".$row['id'].".jpg' alt='".$row['id']."' height='75px'></td>";
-                echo "<td>".$row['name']."</td>";
-                echo "<td>".$row['teacher']."</td>";
-                echo "<td>".$row['place']."</td>";
+                echo "<tr>";
+                echo "<td class='align-middle'><img src='../studentPics/".$row['id'].".jpg' alt='".$row['id']."' height='75px'></td>";
+                echo "<td class='align-middle'>".$row['name']."</td>";
+                echo "<td class='align-middle'>".$row['teacher']."</td>";
+                echo "<td class='align-middle'>".$row['place']."</td>";
+				echo "<td class='align-middle'>".$row['timeout']."</td>";
                 echo "</tr>";
                 }
               }

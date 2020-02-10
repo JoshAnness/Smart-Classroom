@@ -47,27 +47,28 @@ $lastName = $_SESSION['lastName'];
 
               echo "<table class='table table-borderless'>";
               echo "<tr>";
-              echo "<th>ID</th>";
+              echo "<th>Photo</th>";
               echo "<th>Student Name</th>";
               echo "<th>Teacher Name</th>";
               echo "<th>Location</th>";
+			  echo "<th>Time Out</th>";
               echo "</tr>";
 
               while($row = mysqli_fetch_array($result))
               {
                 echo "<tr>";
-                echo "<td>".$row['id']."</td>";
-                echo "<td>".$row['name']."</td>";
-                echo "<td>".$row['teacher']."</td>";
-                echo "<td>".$row['place']."</td>";
+                echo "<td class='align-middle'><img src='../studentPics/".$row['id'].".jpg' alt='".$row['id']."' height='75px'></td>";
+                echo "<td class='align-middle'>".$row['name']."</td>";
+                echo "<td class='align-middle'>".$row['teacher']."</td>";
+                echo "<td class='align-middle'>".$row['place']."</td>";
+				echo "<td class='align-middle'>".$row['timeout']."</td>";
                 echo "</tr>";
               }
 
               echo "</table>";
-
               ?>
             </div>
-			
+
 			<form method="post" action="export.php">
 			 <input type="submit" name="export" class="btn btn-success" value="Export" />
 			</form>
